@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="https://llc-seven.vercel.app/favicon.ico">
     <meta name="Description" content="{{ description }}" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,32 +18,71 @@ body {
   font-weight: 300;
 }
 
-.content {
-  padding: 1.5rem;
-  margin: 0 auto;
+@media (min-width: 650px) {
+  .content {
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
 }
-
+@media (min-width: 1250px) {
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
   align-items:center;
+}
+}
+@media (min-width: 1300px) {
+  .grid-wrapper {
+    grid-template-columns: 67% 33%;
+  }
+}
+@media (min-width: 1400px) {
+.grid-wrapper {
+  grid-template-columns: 65% 35%;
+}
+}
+@media (min-width: 1450px) {
+  .grid-wrapper {
+    grid-template-columns: 60% 40%;
+  }
 }
 .home-left {
-  padding-left:3%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .home-left {
+    padding-left:3%;
+  }
+}
+@media (min-width: 900px) {
+  .flex-wrapper {
+    display: flex;
+    align-items:center;
+    padding: 10px;
+  }
+}
 
+h1 {
+  padding: 20px 0;
+  font-size: 4em;
+  text-align: center;
 }
-.flex-wrapper {
-  display: flex;
-  align-items:center;
-  padding: 10px;
+
+@media (min-width: 650px) {
+h1 {
+  padding: 3rem;
+  font-size: 3em;
+  text-align: center;
 }
+}
+@media (min-width: 900px) {
 h1 {
   padding: 3rem;
   font-size: 4em;
   text-align: center;
+}
 }
 
 .by {
@@ -54,6 +94,15 @@ img {
   width: 100%;
 }
 
+.link-row {
+  margin: auto;
+}
+@media (min-width: 900px) {
+  .link-row {
+    margin: inherit;
+  }
+}
+  
 .link-row a {
     border: 1px solid transparent;
     border-radius: 8px;
@@ -82,7 +131,14 @@ img {
 }
 .cta {
   padding: 50px;
+  margin: auto;
 }
+@media (min-width: 900px) {
+  .cta {
+    margin: inherit;
+  }
+}
+
 .header-img {
   max-width: 150px;
   height: auto;
@@ -97,7 +153,7 @@ header {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('https://llc-seven.vercel.app/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -105,7 +161,7 @@ header {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('https://llc-seven.vercel.app/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -113,7 +169,7 @@ header {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('https://llc-seven.vercel.app/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-900 - latin */
 @font-face {
@@ -121,14 +177,14 @@ header {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('https://llc-seven.vercel.app/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
     </style>
   </head>
   <body>
     <header>
-      <div class="header-img"><a href="https://shareasale.com/r.cfm?b=1887783&u=3104245&m=69959&urllink=&afftrack="><img src="/assets/img/llclogo.svg" /></a></div>
+      <div class="header-img"><a href="https://shareasale.com/r.cfm?b=1887783&u=3104245&m=69959&urllink=&afftrack="><img src="https://llc-seven.vercel.app/assets/img/llclogo.svg" /></a></div>
       
     </header>
     <div class="content">
