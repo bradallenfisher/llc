@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta name="Description" content="{{ description }}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; box-sizing: border-box; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+/* site styles */
+
+body {
+  font-family: 'Montserrat', Fallback, sans-serif;
+  font-weight: 300;
+}
+
+.content {
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items:center;
+}
+.home-left {
+  padding-left:3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.flex-wrapper {
+  display: flex;
+  align-items:center;
+  padding: 10px;
+}
+h1 {
+  padding: 3rem;
+  font-size: 4em;
+  text-align: center;
+}
+
+.by {
+  font-size: 0.6rem;
+  color: #888;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.link-row a {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #4a90e2;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+    padding: 8px 8px 8px 30px;
+    position: relative;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.link-row a::before {
+  content: '›';
+  padding-right: 10px;
+}
+
+.button {
+  display:inline-block;color:white;width:inherit;text-decoration: none;padding:20px 30px;border-radius: 1em; background: #14c991; font-weight: bold;
+}
+.button:hover {
+  background-color: #4a90e2;
+}
+.cta {
+  padding: 50px;
+}
+.header-img {
+  max-width: 150px;
+  height: auto;
+}
+header {
+  padding:20px;
+}
+
+/* montserrat-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/montserrat-v26-latin/montserrat-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-img"><a href="https://shareasale.com/r.cfm?b=1887783&u=3104245&m=69959&urllink=&afftrack="><img src="/assets/img/llclogo.svg" /></a></div>
+      
+    </header>
+    <div class="content">
+      {{ content }}
+    </div>
+
+  </body>
+</html>
